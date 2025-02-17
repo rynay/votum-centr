@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 body {
   margin: 0;
-  height: 1080px;
-  width: 1920px;
-  padding: 20px;
   background: url(./images/background.png) center center / cover fixed no-repeat;
   overflow: hidden;
   font-family: "Rubik", serif;
+}
+
+body #root {
+  padding: 20px;
+  min-height: 1080px;
+  min-width: 1920px;
 }
 
 body * {
