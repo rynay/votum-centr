@@ -1,0 +1,63 @@
+.header {
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+    position: relative;
+
+    &__qrCodeContainer {
+        height: 270px;
+        width: 260px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        border-radius: 30px;
+
+        img {
+            height: 237px;
+            width: 237px;
+        }
+    }
+
+    &__logo {
+        position: absolute;
+        top: 15px;
+        right: 70px;
+    }
+
+    &__cta {
+        padding: 45px 0;
+        font-size: 48px;
+        color: white;
+
+        h2 {
+            font-size: inherit;
+            text-transform: uppercase;
+        }
+
+        p {
+            font-weight: bold;
+        }
+    }
+
+    &__contacts {
+        display: flex;
+        align-items: center;
+        gap: 28px;
+    }
+
+    &__logoContainer {
+        display: flex;
+        align-items: center;
+
+        & > * {
+            height: 81px;
+            width: 81px;
+        }
+
+        & > * + * {
+            margin: -10px;
+            z-index: -1;
+        }
+    }
+}
